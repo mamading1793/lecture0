@@ -1,0 +1,19 @@
+h1 {
+  color:blue;
+  text-align: center;
+  background: teal;
+  width: 100px;
+  height:123px;
+  margin-right:  100px;
+  font-size:  100px;
+  font-style: italic;
+  font-family: fantasy;
+  border:10px dotted blue;
+}
+
+p {
+  color:red;
+  text-align: left;
+
+
+}
