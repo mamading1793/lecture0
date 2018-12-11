@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        background-color: springgreen;
+        font-size: 20px;
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+      }
+      a::before{
+        content: "\21d2 Check here: ";
+        font-weight: bold;
+      }
+      a::after{
+        content: "\21d2 Check here: ";
+        font-weight: bold;
+      }
+      p::selection{
+        background: yellow;
+        color: red;
+      }
+      @media (max-width: 900px){
+        li::before {content:'hello';}
+      }
+      @media (min-width: 899px){
+        li::before {}
+      }
+      p,h2 {
+        color: blue;
+      }
+      ol li {
+        color:red;
+      }
+      input[type = text]{
+        background: green;
+      }
+      input[type = number]{
+        background: yellow;
+      }
+      @media (max-width: 900px){
+        .screen-only{
+          background-color:red;
+        }
+      }
+      @media (min-width: 899px){
+        .screen-only{
+          background-color:blue;
+        }
+      }
+      @media print {
+        .screen-only{
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <ol>
+      <li>list item one</li>
+      <li>list item two</li>
+      <ul>
+        <li>sublist item one</li>
+        <li>sublist item two</li>
+        <ul>
+          <li> subsub lista </li>
+          <li> subsub lista</li>
+        </ul>
+      </ul>
+
+    </ol>
+    <ul>
+      <li>out item one</li>
+      <li>out item two</li>
+    </ul>
+    <div class="">
+      <input type="text" name="name" placeholder="Name">
+      <input type="password" name="password" placeholder="Password">
+      <input type="number" name="age" placeholder="18">
+    </div>
+    <div class="">
+      <input list="countries" name="country" placeholder="Country">
+      <datalist id="countries">
+        <option value="America"></option>
+        <option value="England"></option>
+        <option value="China"></option>
+      </datalist>
+    </div>
+    <a href="https://www.163.com"> click here </a>
+    <ul>
+      <li><a href="#section1">Section 1</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section3">Section 3</a></li>
+    </ul>
+    <div class="container">
+      <div>A abcdefg</div>
+      <div>B abcdefg</div>
+      <div>C abcdefg</div>
+      <div>D abcdefg</div>
+      <div>E abcdefg</div>
+      <div>F abcdefg</div>
+      <div>G abcdefg</div>
+
+    </div>
+    <h2 id = "section1">Section 1</h2>
+    <p>
+      Iguanodon (/ɪˈɡwɑːnədɒn/ i-GWAH-nə-don; meaning "iguana-tooth") is a genus of ornithopod dinosaur that existed roughly halfway between the first of the swift bipedal hypsilophodontids of the mid-Jurassic and the duck-billed dinosaurs of the late Cretaceous. While many species have been classified in the genus Iguanodon, dating from the late Jurassic Period to the early Cretaceous Period of Asia, Europe, and North America, research in the first decade of the 21st century suggests that there is only one well-substantiated species: I. bernissartensis, which lived from the late Barremian to the earliest Aptian ages[2] (Early Cretaceous) in Belgium, Spain, England and possibly elsewhere in Europe, between about 126 and 113 million years ago. Iguanodon were large, bulky herbivores. Distinctive features include large thumb spikes, which were possibly used for defense against predators, combined with long prehensile fifth fingers able to forage for food.
+    </p>
+    <h2 id = "section2">Section 2</h2>
+    <p class = "screen-only">
+      The genus was named in 1825 by English geologist Gideon Mantell but discovered by William Harding Bensted, based on fossil specimens that are now assigned to Therosaurus and Mantellodon. Iguanodon was the second type of dinosaur formally named based on fossil specimens, after Megalosaurus. Together with Megalosaurus and Hylaeosaurus, it was one of the three genera originally used to define Dinosauria. The genus Iguanodon belongs to the larger group Iguanodontia, along with the duck-billed hadrosaurs. The taxonomy of this genus continues to be a topic of study as new species are named or long-standing ones reassigned to other genera.
+    </p>
+    <h2 id = "section3">Section 3</h2>
+    <p>
+
+      Scientific understanding of Iguanodon has evolved over time as new information has been obtained from fossils. The numerous specimens of this genus, including nearly complete skeletons from two well-known bone beds, have allowed researchers to make informed hypotheses regarding many aspects of the living animal, including feeding, movement, and social behaviour. As one of the first scientifically well-known dinosaurs, Iguanodon has occupied a small but notable place in the public's perception of dinosaurs, its artistic representation changing significantly in response to new interpretations of its remains.
+    </p>
+
+  </body>
+</html>
